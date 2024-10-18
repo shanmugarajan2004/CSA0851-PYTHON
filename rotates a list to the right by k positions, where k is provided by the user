@@ -1,0 +1,12 @@
+
+my_list = [1, 2, 3, 4, 5]
+
+k = int(input("Enter the number of positions to rotate the list: "))
+
+
+k = k % len(my_list)  # Handles cases where k is greater than the list length
+
+rotated_list = my_list[-k:] + my_list[:-k]
+
+print(f"Original list: {my_list}")
+print(f"Rotated list by {k} positions: {rotated_list}")
