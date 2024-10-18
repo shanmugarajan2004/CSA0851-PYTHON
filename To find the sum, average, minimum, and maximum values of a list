@@ -1,0 +1,20 @@
+# Program to find sum, average, minimum, and maximum of a list
+
+# Input: asking user to enter numbers separated by spaces
+numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
+
+# Calculate sum
+total_sum = sum(numbers)
+
+# Calculate average
+average = total_sum / len(numbers)
+
+# Find minimum and maximum
+minimum = min(numbers)
+maximum = max(numbers)
+
+# Output the results
+print(f"Sum: {total_sum}")
+print(f"Average: {average}")
+print(f"Minimum: {minimum}")
+print(f"Maximum: {maximum}")
