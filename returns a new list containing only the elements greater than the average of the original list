@@ -1,0 +1,17 @@
+
+
+
+my_list = [1, 2, 3, 4, 5]
+
+
+total_sum = sum(my_list)
+
+
+average = total_sum / len(my_list)
+
+
+greater_than_avg = [num for num in my_list if num > average]
+
+print(f"Original list: {my_list}")
+print(f"Average: {average}")
+print(f"Elements greater than the average: {greater_than_avg}")
